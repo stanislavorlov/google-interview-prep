@@ -14,7 +14,7 @@ class MyHashMap:
     # returns -1 if no mapping for key
     def get(self, key: int) -> int:
         value = self.map[key]
-
+        
     
     # removes the mapping if contains key
     def remove(self, key: int) -> None:

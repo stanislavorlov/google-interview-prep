@@ -1,0 +1,14 @@
+Hash Table is a data structure which organizes data using hash functions in order to support quick insertion and search.
+
+There are two different kinds of hash tables: hash set and hash map.
+- The hash set is one of the implementations of a set data structure to store no repeated values.
+- The hash map is one of the implementations of a map data structure to store (key, value) pairs.
+
+By choosing a proper hash function a wonderful performance can be achieved.
+
+Insertion:
+    We parse the keys through the hash function to map into corresponding bucket.
+Search:
+    We parse the keys through the same hash function and search only in specific bucket.
+
+Hash function - the most important component
