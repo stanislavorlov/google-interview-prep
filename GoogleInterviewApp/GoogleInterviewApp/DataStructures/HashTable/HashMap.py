@@ -2,16 +2,15 @@ class HashMap(object):
     def __init__(self, size):
         self.data = [[]] * size
 
-    # hash function
-    def _hash(self, key): 
+    def hash(self, param, size):
         hash_value = 0
-        for i in range(len(key)):
-            hash_value = (hash_value + ord(key[i]) * i) % len(self.data)
+        for i in range(len(param)):
+            hash_value = (hash_value + ord(param[i]) * i) % size
 
         return hash_value
     
     def set(self, key, value):
-        address = self._hash(key)
+        address = self.hash(key, len(self.data))
 
         if not self.data[address]:
             self.data[address] = []
@@ -23,7 +22,7 @@ class HashMap(object):
     
     def get(self, key):
         output = []
-        address = self._hash(key)
+        address = self.hash(key, len(self.data))
         currentBucket = self.data[address]
 
         if currentBucket:

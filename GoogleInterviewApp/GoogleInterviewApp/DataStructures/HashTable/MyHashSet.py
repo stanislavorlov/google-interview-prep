@@ -1,4 +1,5 @@
 from itertools import combinations
+from re import L
 
 class MyHashSet:
 
@@ -39,9 +40,7 @@ print(myHashSet.contains(2))       # True
 myHashSet.remove(2)                # set = [1]
 print(myHashSet.contains(2))       # False
 
-
-
-
+# return true if any value appears at least twice in the array
 def containsDuplicate(nums: list[int]) -> bool: # type: ignore
     mySet = set()
     for _, num in enumerate(nums): # type: ignore
@@ -51,5 +50,17 @@ def containsDuplicate(nums: list[int]) -> bool: # type: ignore
             return True
     return False
 
-nums = [1,2,3,1]
-print(containsDuplicate(nums))
+# every element appears twice except for one. Find that single one.
+def singleNumber(nums: list[int]) -> int:
+        dist = set()
+        for _, num in enumerate(nums):
+            if num not in dist:
+                dist.add(num)
+            else:
+                dist.remove(num)
+        
+        return dist.pop()
+
+nums = [1]
+print(singleNumber(nums))
+
