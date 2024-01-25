@@ -8,19 +8,11 @@ class Solution:
         t_to_s_mapping = {}
 
         for sC, tC in zip(s,t):
-            temp1 = ''
-            temp2 = ''
-            if sC in s_to_t_mapping:
-                temp1 = s_to_t_mapping[sC]
-            
-            if tC in t_to_s_mapping:
-                temp2 = t_to_s_mapping[tC]
-
-            if ((len(temp1) or len(temp2)) and temp1 != tC and temp2 != sC):
+            if sC not in s_to_t_mapping and tC not in t_to_s_mapping:
+                s_to_t_mapping[sC] = tC
+                t_to_s_mapping[tC] = sC
+            elif s_to_t_mapping.get(sC) != tC and t_to_s_mapping.get(tC) != sC:
                 return False
-
-            s_to_t_mapping[sC] = tC
-            t_to_s_mapping[tC] = sC
 
         return True
 
