@@ -18,15 +18,25 @@ def isValidSudoku(board: list[list[str]]) -> bool:
     cols = collections.defaultdict(set)
     for i in range(0,9):
         for j in range(0,9):
-            val = board[i][j]
-            if not val == '.':
-                if val in hash_map[hash_code(i,j)] or val in rows[i] or val in cols[j]:
-                    return False
-                hash_map[hash_code(i,j)].add(val)
-                rows[i].add(val)
-                cols[j].add(val)
+            if board[i][j] == '.':
+                continue
+            if board[i][j] not in hash_map[hash_code(i,j)] and board[i][j] not in rows[i] and board[i][j] not in cols[j]:
+                hash_map[hash_code(i,j)].add(board[i][j])
+                rows[i].add(board[i][j])
+                cols[j].add(board[i][j])
+            else:
+                return False
 
     return True
+
+def isValidSudokuLeetcode(board: list[list[str]]) -> bool:
+    res = []
+    for i in range(9):
+        for j in range(9):
+            element = board[i][j]
+            if element != '.':
+                res += [(i, element), (element, j), (i // 3, j // 3, element)]
+    return len(res) == len(set(res))
 
 board = [["5","3",".",".","7",".",".",".","."]
         ,["6",".",".","1","9","5",".",".","."]
@@ -38,6 +48,8 @@ board = [["5","3",".",".","7",".",".",".","."]
         ,[".",".",".","4","1","9",".",".","5"]
         ,[".",".",".",".","8",".",".","7","9"]]
 
+print(isValidSudokuLeetcode(board))     #True
+
 board = [[".",".","4",".",".",".","6","3","."],
          [".",".",".",".",".",".",".",".","."],
          ["5",".",".",".",".",".",".","9","."],
@@ -48,4 +60,4 @@ board = [[".",".","4",".",".",".","6","3","."],
          [".",".",".",".",".",".",".",".","."],
          [".",".",".",".",".",".",".",".","."]]
 
-print(isValidSudoku(board)) #true
+print(isValidSudokuLeetcode(board))     #False
