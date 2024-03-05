@@ -1,6 +1,4 @@
 from collections import defaultdict
-import collections
-
 
 # strings = ["abc","bcd","acef","xyz","az","ba","a","z"]
 
@@ -20,7 +18,7 @@ def hash_code(i,j):
     return (i // 3, j // 3)
 
 def valid_sudoke(board):
-    hash_map = collections.defaultdict(list)
+    hash_map = defaultdict(list)
     for i in range(0, len(board)):
         for j in range(0, len(board[i])):
             val = board[i][j]
@@ -32,7 +30,6 @@ def valid_sudoke(board):
             else:
                 return False
     return True
-
 
 board = [["5","3",".",".","7",".",".",".","."]
         ,["6",".",".","1","9","5",".",".","."]
@@ -57,3 +54,8 @@ board = [[".",".","4",".",".",".","6","3","."],
          [".",".",".",".",".",".",".",".","."]]
 
 print(valid_sudoke(board))
+
+jewels = "aA"
+stones = "aAAbbbb"
+jewelsSet = set(jewels)
+print(sum(s in stones for s in jewelsSet))
