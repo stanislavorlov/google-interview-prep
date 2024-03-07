@@ -23,15 +23,13 @@ class LinkedList:
         
 
     def find_middle_node(self):
-        slowPointer = self.head
-        fastPointer = self.head
-        while fastPointer is not None:
-            if fastPointer.next is not None:
-                fastPointer = fastPointer.next.next
-                slowPointer = slowPointer.next
-            else:
-                fastPointer = None
-        return slowPointer
+        slow = fast = self.head
+
+        while fast != None and fast.next != None:
+            slow = slow.next
+            fast = fast.next.next
+
+        return slow
 
 my_linked_list = LinkedList(1)
 my_linked_list.append(2)
