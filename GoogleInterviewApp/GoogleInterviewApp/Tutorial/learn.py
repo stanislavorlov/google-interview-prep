@@ -19,7 +19,7 @@ for word, p in zip(s.split(), pattern):
     print(word, p)      # dog a     cat b       cat b       dog a
 
 for w1,w2 in zip_longest("abc", "pqrs"):
-    print(w1,w2)
+    print(w1,w2)        # ap bq cr s
 
 l = [1,2,3,4]
 for i,n in enumerate(l):
