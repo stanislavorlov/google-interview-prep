@@ -59,3 +59,6 @@ jewels = "aA"
 stones = "aAAbbbb"
 jewelsSet = set(jewels)
 print(sum(s in stones for s in jewelsSet))
+
+for i in range(0,1):
+    print(i)
