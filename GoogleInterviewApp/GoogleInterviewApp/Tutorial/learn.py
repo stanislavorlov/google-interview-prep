@@ -39,3 +39,6 @@ jewels = "aA"
 stones = "aAAbbbb"
 jewelsSet = set(jewels)
 print(sum(s in stones for s in jewelsSet))
+
+carry, out = divmod(17,10)
+print(carry, out)
