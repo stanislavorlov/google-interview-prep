@@ -62,3 +62,5 @@ print(sum(s in stones for s in jewelsSet))
 
 for i in range(0,1):
     print(i)
+
+print(7 % 2)
