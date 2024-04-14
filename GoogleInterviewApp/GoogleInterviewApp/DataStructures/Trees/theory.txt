@@ -1,0 +1,10 @@
+Binary Tree - no more than 2 childs
+Binary Search Tree - root bigger than left and smaller than right
+
+Balanced vs Unbalanced
+
+Algorithm for tree balancing
+
+Inorder traversal
+Preorder traversal
+Postorder traversal
