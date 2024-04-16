@@ -1,6 +1,4 @@
-from locale import currency
 from queue import Queue
-
 
 class Tree:
     def __init__(self, value) -> None:

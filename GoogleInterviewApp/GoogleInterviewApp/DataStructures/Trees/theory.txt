@@ -5,6 +5,21 @@ Balanced vs Unbalanced
 
 Algorithm for tree balancing
 
-Inorder traversal
-Preorder traversal
-Postorder traversal
+# Inorder traversal
+# Preorder traversal
+# Postorder traversal
+
+https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/
+https://www.thecrazyprogrammer.com/2019/09/types-of-trees-in-data-structure.html
+
+# Inorder traversal
+
+left child - node - right child
+
+# Preorder traversal
+
+node - left child - right
+
+# Postorder traversal
+
+left child - right - node
