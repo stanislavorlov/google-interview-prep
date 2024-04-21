@@ -6,6 +6,7 @@
 
 from typing import Optional
 
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -14,4 +15,20 @@ class TreeNode:
     
 class Solution:
     def sumNumbers(self, root: Optional[TreeNode]) -> int:
-        return 0
+        return self.sumLeaves(root, 0)
+
+    def sumLeaves(self, node: Optional[TreeNode], sum = 0) -> int:
+        if node:
+            sum = sum * 10 + node.val
+        else:
+            return 0
+        
+        if node.left == None and node.right == None:
+            return sum
+        
+        return self.sumLeaves(node.left, sum) + self.sumLeaves(node.right, sum)
+        
+    
+tree = TreeNode(1, TreeNode(2), TreeNode(3))
+solution = Solution()
+print(solution.sumNumbers(tree))
