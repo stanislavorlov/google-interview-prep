@@ -3,7 +3,7 @@
 # Given the root of a binary tree and two integers val and depth, 
 # add a row of nodes with value val at the given depth depth.
 
-from queue import Queue
+from collections import deque
 from typing import Optional
 
 class TreeNode:
@@ -12,22 +12,63 @@ class TreeNode:
         self.left = left
         self.right = right
 
-class Solution:
+class SolutionRecursion:
     def addOneRow(self, root: Optional[TreeNode], val: int, depth: int) -> Optional[TreeNode]:
-        queue = Queue()
-        queue.put(root)
+        if depth == 1:
+            node = TreeNode(val)
+            node.left = root
+            
+            return node
+        
+        self.insert(val, root, 1, depth)
 
-        height = 1
+        return root
 
-        while not queue.empty() and height < depth:
-            node = queue.get()
+    def insert(self, val: int, node: TreeNode, depth: int, n: int):
+        if node is None:
+            return
+        
+        if depth == n - 1:
+            t = node.left
+            node.left = TreeNode(val)
+            node.left.left = t
+            t = node.right
+            node.right = TreeNode(val)
+            node.right.right = t
+        else:
+            self.insert(val, node.left, depth + 1, n)
+            self.insert(val, node.right, depth + 1, n)
 
-            if node.left:
-                queue.put(node.left)
+class Node:
+    def __init__(self, node: TreeNode, d: int):
+        self.node = node
+        self.depth = d
 
-            if node.right:
-                queue.put(node.right)
+class SoltuionStack:
+    def addOneRow(self, root: Optional[TreeNode], val: int, depth: int) -> Optional[TreeNode]:
+        if depth == 1:
+            n = TreeNode(val)
+            n.left = root
+            return n
+        stack = deque()
+        stack.append(Node(root, 1))
+        while len(stack) > 0:
+            n = stack.pop()
+            if n.node is None:
+                continue
+            if n.depth == d-1:
+                temp = n.node.left
+                n.node.left = TreeNode(val)
+                n.node.left.left = temp
+                temp = n.node.right
+                n.node.right = TreeNode(val)
+                n.node.right.right = temp
+            else:
+                stack.append(Node(n.node.left, n.depth + 1))
+                stack.append(Node(n.node.right, n.depth + 1))
 
-            depth -= 1
-
-        # get all nodes from queue and create child
+        return root
+    
+tree = TreeNode(4, TreeNode(2, TreeNode(3), TreeNode(1)), TreeNode(6, TreeNode(5)))
+solution = SolutionRecursion()
+solution.addOneRow(tree, 1, 3)
