@@ -1,6 +1,8 @@
 ## Good article with Theory
 https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/
 
+https://leetcode.com/discuss/study-guide/1212004/binary-trees-study-guide
+
 ![image](https://github.com/stanislavorlov/google-interview-prep/assets/4947509/4f7b325c-d378-440a-8ae1-f43d43cf240f)
 
 
