@@ -1,68 +1,81 @@
 from queue import Queue
 
-
-class BinaryTree:
-    def __init__(self, value):
+class TreeNode:
+    def __init__(self, value) -> None:
         self.value = value
         self.left = self.right = None
 
     def insert_left(self, value):
         if self.left is None:
-            self.left = BinaryTree(value)
+            self.left = TreeNode(value)
         else:
-            new_node = BinaryTree(value)
+            new_node = TreeNode(value)
             new_node.left = self.left
             self.left = new_node
 
     def insert_right(self, value):
         if self.right is None:
-            self.right = BinaryTree(value)
+            self.right = TreeNode(value)
         else:
-            new_node = BinaryTree(value)
+            new_node = TreeNode(value)
             new_node.right = self.right
             self.right = new_node
 
-    def pre_order(self):
-        print(self.value)
+def pre_order(root: TreeNode):
+    print(root.value)
 
-        if self.left:
-            self.left.pre_order()
+    if root.left:
+        pre_order(root.left)
 
-        if self.right:
-            self.right.pre_order()
+    if root.right:
+        pre_order(root.right)
 
-    def in_order(self):
-        if self.left:
-            self.left.in_order()
+def in_order(root: TreeNode):
+    if root.left:
+        in_order(root.left)
 
-        print(self.value)
+    print(root.value)
 
-        if self.right:
-            self.right.in_order()
+    if root.right:
+        in_order(root.right)
 
-    def post_order(self):
-        if self.left:
-            self.left.post_order()
+def post_order(root: TreeNode):
+    if root.left:
+        post_order(root.left)
 
-        if self.right:
-            self.right.post_order()
+    if root.right:
+        post_order(root.right)
 
-        print(self.value)
+    print(root.value)
 
-    # Breadth-First Search
-    def bfs(self):
-        queue = Queue()
-        queue.put(self)
+# Breadth-First Search
+def bfs(root: TreeNode):
+    queue = Queue()
+    queue.put(root)
 
-        while not queue.empty():
-            current = queue.get()
-            print(current.value)
+    while not queue.empty():
+        current = queue.get()
+        print(current.value)
 
-            if current.left:
-                queue.put(current.left)
+        if current.left:
+            queue.put(current.left)
 
-            if current.right:
-                queue.put(current.right)
+        if current.right:
+            queue.put(current.right)
+
+def depth_first_iterative(root: TreeNode):
+    stack = []
+    stack.append(root)
+
+    while stack:
+        node = stack.pop()
+        print(node.value)
+
+        if node.right:
+            stack.append(node.right)
+
+        if node.left:
+            stack.append(node.left)
 
 # in-order
 # left
@@ -86,7 +99,7 @@ class BinaryTree:
 # queue left
 # queue right
 
-tree = BinaryTree(9)
+tree = TreeNode(9)
 tree.insert_left(4)
 tree.insert_right(14)
 
@@ -105,15 +118,15 @@ tree.right.insert_right(20)
 
 # 1. pre-order
 print("Pre order")
-#tree.pre_order()
+pre_order(tree)
 
 # 2. in-order
 print("in-order")
-#tree.in_order()
+in_order(tree)
 
 # 3. post-order
 print("post-order")
-#tree.post_order()
+post_order(tree)
 
 # 4. Breadth-First search                   
 
@@ -123,4 +136,7 @@ print("post-order")
 # level 2
 
 print("BFS")
-tree.bfs()
+bfs(tree)
+
+print("DFS Interactive")
+depth_first_iterative(tree)
