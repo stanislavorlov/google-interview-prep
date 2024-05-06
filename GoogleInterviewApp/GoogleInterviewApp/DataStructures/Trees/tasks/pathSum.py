@@ -38,9 +38,7 @@ class Solution:
         if not root:
             return []
 
-        stack = []
-        output = []
-        stack.append((root, root.val, [root.val]))
+        stack, output = [(root, root.val, [root.val])], []
         while len(stack):
             (node, sum, path) = stack.pop()
 
