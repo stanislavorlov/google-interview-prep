@@ -77,6 +77,9 @@ def depth_first_iterative(root: TreeNode):
         if node.left:
             stack.append(node.left)
 
+def inorder(root: TreeNode) -> list[int]:
+    return inorder(root.left) + [root.value] + inorder(root.right) if root else []
+
 # in-order
 # left
 # print
@@ -117,16 +120,16 @@ tree.right.insert_right(20)
 # Depth-First Search
 
 # 1. pre-order
-print("Pre order")
-pre_order(tree)
+#print("Pre order")
+#pre_order(tree)
 
 # 2. in-order
-print("in-order")
-in_order(tree)
+#print("in-order")
+#in_order(tree)
 
 # 3. post-order
-print("post-order")
-post_order(tree)
+#print("post-order")
+#post_order(tree)
 
 # 4. Breadth-First search                   
 
@@ -135,8 +138,10 @@ post_order(tree)
 # level 1
 # level 2
 
-print("BFS")
-bfs(tree)
+#print("BFS")
+#bfs(tree)
 
-print("DFS Interactive")
-depth_first_iterative(tree)
+#print("DFS Interactive")
+#depth_first_iterative(tree)
+
+print(in_order(tree))
