@@ -9,13 +9,11 @@ from typing import List
 def kthLargestNumber(nums: List[int], k: int) -> int:
     min_v, max_v = sys.maxsize, -sys.maxsize
 
+    map = {}
     for n in nums:
         min_v = min(min_v, n)
         max_v = max(max_v, n)
-
-    map = {}
-    for i in nums:
-        map[i] = map.get(i, 0) + 1
+        map[n] = map.get(n, 0) + 1
 
     for i in range(max_v, min_v - 1, -1):
         if i in map:
