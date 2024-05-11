@@ -1,6 +1,8 @@
 # You are given a perfect binary tree (each node has 2 children)
 # Populate each next pointer to point to its next right node.
 
+# https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/
+
 from collections import deque
 from queue import Queue
 from typing import Optional
