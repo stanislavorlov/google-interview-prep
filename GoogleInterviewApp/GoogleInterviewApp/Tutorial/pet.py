@@ -64,3 +64,14 @@ for i in range(0,1):
     print(i)
 
 print(7 % 2)
+
+t1 = (2,1)
+t2 = (4,3)
+#print(sorted(t1))
+#print(sorted(t2))
+
+s = set(t1)
+s.update(set(t2))
+print(s)
+
+print(tuple(s))
