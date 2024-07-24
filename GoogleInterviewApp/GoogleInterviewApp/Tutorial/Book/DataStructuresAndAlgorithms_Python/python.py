@@ -171,3 +171,14 @@ class Sequence(metaclass=ABCMeta):
                 return j
         
         raise ValueError('value not in sequence')
+    
+print(list('bird'))                     # ['b', 'i', 'r', 'd']
+print(''.join(['b','i','r','d']))       # bird
+
+# two-dimensional list
+data = [ [22, 18, 709, 5, 33], [45, 32, 830, 120, 750], [4, 880, 45, 66, 61] ]
+
+print(data)
+
+data1 = [ [0] * 5 for j in range(3)]
+print(data1)
