@@ -1,5 +1,3 @@
-from queue import Empty
-
 class _DoublyLinkedBase:
 
     class _Node:
@@ -19,10 +17,10 @@ class _DoublyLinkedBase:
 
     def __len__(self):
         return self._size
-    
+
     def is_empty(self):
         return self._size == 0
-    
+
     def _insert_between(self, e, predecessor, successor):
         newest = self._Node(e, predecessor, successor)    # linked to neighbors
         predecessor._next = newest
@@ -30,7 +28,7 @@ class _DoublyLinkedBase:
         self._size += 1
 
         return newest
-    
+
     def _delete_node(self, node):
         predecessor = node._prev
         successor = node._next
@@ -41,47 +39,3 @@ class _DoublyLinkedBase:
         node._prev = node._next = node._element = None
 
         return element
-
-class LinkedDequeue(_DoublyLinkedBase):
-
-    def first(self):
-        if self.is_empty():
-            raise Empty('Dequeue is empty')
-        return self._header._next._element
-    
-    def last(self):
-        if self.is_empty():
-            raise Empty('Dequeue is empty')
-        return self._trailer._prev._element
-    
-    def insert_first(self, e):
-        self._insert_between(e, self._header, self._header._next)
-
-    def insert_last(self, e):
-        self._insert_between(e, self._trailer._prev, self._trailer)
-
-    def delete_first(self):
-        if self.is_empty():
-            raise Empty('Dequeue is empty')
-
-        self._delete_node(self._header._next)
-
-    def delete_last(self):
-        if self.is_empty():
-            raise Empty('Dequeue is empty')
-        
-        self._delete_node(self._trailer._prev)
-
-q = LinkedDequeue()
-q.insert_first(1)
-q.insert_last(5)
-print(q.first())
-print(q.last())
-q.insert_first(2)
-q.insert_last(3)
-print(q.first())
-print(q.last())
-q.delete_first()
-q.delete_last()
-print(q.first())
-print(q.last())
