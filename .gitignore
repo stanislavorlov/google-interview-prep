@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/GoogleInterviewApp/.vs/GoogleInterviewApp
+/GoogleInterviewApp/GoogleInterviewApp/Tutorial/Book/DataStructuresAndAlgorithms_Python/DataStructures/LinkedLists/PositionalList/__pycache__
+/GoogleInterviewApp/GoogleInterviewApp/Tutorial/Book/DataStructuresAndAlgorithms_Python/DataStructures/LinkedLists/__pycache__
+/GoogleInterviewApp/GoogleInterviewApp/GoogleInterviewApp.pyproj.user

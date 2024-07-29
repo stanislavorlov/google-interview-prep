@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>GoogleInterviewApp.py</StartupFile>
+    <StartupFile>Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\PositionalList\FavoritesList.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,156 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\3Sum.py" />
+    <Compile Include="Algorithms\4sum.py" />
+    <Compile Include="Algorithms\secondLargest.py" />
+    <Compile Include="Algorithms\slidingWindow.py" />
+    <Compile Include="DataStructures\Graph\graph.py" />
+    <Compile Include="DataStructures\HashTable\HashMap.py" />
+    <Compile Include="DataStructures\HashTable\HashMapUsage.py" />
+    <Compile Include="DataStructures\HashTable\HashTableLeetCode.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\4SumII.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\ArrayIntersection2.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\ArraysIntersection.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\containsDuplicate.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\findAllDuplicates.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\findTheDifference.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\firstUniqChar.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\groupAnagrams.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\groupShiftedStrings.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\HappyNumber.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\indexOfFirstOccurence.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\indexSum.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\isAnagram.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\Isomorphic.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\JewelsInStones.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\kthLargestNumber.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\LoggerRateLimiter.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\longestSubstring.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\makeEqual.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\moveZeroes.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\SplitArray.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\topKFrequentElements.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\twoSum.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\twoSumIII.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\validSudoku.py" />
+    <Compile Include="DataStructures\HashTable\leetcode_tasks\wordPattern.py" />
+    <Compile Include="DataStructures\HashTable\MyHashMap.py" />
+    <Compile Include="DataStructures\HashTable\MyHashSet.py" />
+    <Compile Include="DataStructures\LinkedList\DoublyLinkedList.py" />
+    <Compile Include="DataStructures\LinkedList\LeetcodeList.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\addTwoNumbers.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\convertBinary.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\find_middle_node.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\flatten_list.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\insertCycleList.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\ListCycle.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\list_intersection.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\mergeTwoLists.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\MyLinkedList.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\oddEvenList.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\palindromeList.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\removeByIndex.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\removeNodeByValue.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\removeNthNode.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\reverseKGroup.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\reverseList.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\SumOfLists.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\swapPairs.py" />
+    <Compile Include="DataStructures\LinkedList\LinkedList.py" />
+    <Compile Include="DataStructures\LinkedList\Summary.py" />
+    <Compile Include="DataStructures\LinkedList\udemy\binary_to_decimal.py" />
+    <Compile Include="DataStructures\LinkedList\udemy\partitionList.py" />
+    <Compile Include="DataStructures\LinkedList\udemy\remove_duplicates.py" />
+    <Compile Include="DataStructures\Trees\BinaryTree.py" />
+    <Compile Include="DataStructures\Trees\Tasks.py" />
+    <Compile Include="DataStructures\Trees\tasks\addRowTree.py" />
+    <Compile Include="DataStructures\Trees\tasks\conertListToTree.py" />
+    <Compile Include="DataStructures\Trees\tasks\IsBinaryTree.py" />
+    <Compile Include="DataStructures\Trees\tasks\isValidBST.py" />
+    <Compile Include="DataStructures\Trees\tasks\levelOrder.py" />
+    <Compile Include="DataStructures\Trees\tasks\lowestCommonAncestor.py" />
+    <Compile Include="DataStructures\Trees\tasks\minimumDepth.py" />
+    <Compile Include="DataStructures\Trees\tasks\nextRightNode.py" />
+    <Compile Include="DataStructures\Trees\tasks\pathSum.py" />
+    <Compile Include="DataStructures\Trees\tasks\rangeSumBST.py" />
+    <Compile Include="DataStructures\Trees\tasks\recoverTree.py" />
+    <Compile Include="DataStructures\Trees\tasks\SameTree.py" />
+    <Compile Include="DataStructures\Trees\tasks\SumRootLeaf.py" />
+    <Compile Include="DataStructures\Trees\tasks\symmetricTree.py" />
+    <Compile Include="DataStructures\Trees\tasks\verticalOrder.py" />
+    <Compile Include="DataStructures\Trees\traverses.py" />
+    <Compile Include="DataStructures\Trees\traverses_iteractive.py" />
     <Compile Include="GoogleInterviewApp.py" />
+    <Compile Include="Random_Leet_Code\mergeAlternately.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\Algorithms\algorithmAnalysis.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\Algorithms\binarySearch.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\Algorithms\CaesarCipher.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\Algorithms\insertionSort.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\Algorithms\recursion.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\LinkedDequeue.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\LinkedQueue.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\LinkedStack.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\PositionalList\FavoritesList.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\PositionalList\PositionalList.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\_DoublyLinkedBase.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\StackQueueDequeue\Queue.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\StackQueueDequeue\Stack.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\Trees\Tree.py" />
+    <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\python.py" />
+    <Compile Include="Tutorial\Cookie.py" />
+    <Compile Include="Tutorial\learn.py" />
+    <Compile Include="Tutorial\pet.py" />
+    <Compile Include="Tutorial\PythonTutorial.py" />
+    <Compile Include="Tutorial\StacksAndQueues.py" />
+    <Compile Include="Tutorial\test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Algorithms\" />
+    <Folder Include="Books\" />
+    <Folder Include="DataStructures\" />
+    <Folder Include="DataStructures\Graph\" />
+    <Folder Include="DataStructures\HashTable\" />
+    <Folder Include="DataStructures\HashTable\leetcode_tasks\" />
+    <Folder Include="DataStructures\LinkedList\" />
+    <Folder Include="DataStructures\LinkedList\leetcode_tasks\" />
+    <Folder Include="DataStructures\LinkedList\udemy\" />
+    <Folder Include="DataStructures\Trees\" />
+    <Folder Include="DataStructures\Trees\tasks\" />
+    <Folder Include="DataStructures\Tries\" />
+    <Folder Include="Random_Leet_Code\" />
+    <Folder Include="Tutorial\" />
+    <Folder Include="Tutorial\Book\" />
+    <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\" />
+    <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\Algorithms\" />
+    <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\" />
+    <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\" />
+    <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\PositionalList\" />
+    <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\__pycache__\" />
+    <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\Trees\" />
+    <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\StackQueueDequeue\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Books\ArraySortingAlgorithms.png" />
+    <Content Include="Books\CommonDataStructuresOperations.png" />
+    <Content Include="Books\Data Structures and Algorithms in Python.pdf" />
+    <Content Include="Books\introduction-to-algorithms-3rd-edition.pdf" />
+    <Content Include="Books\LL+vs+Lists+-Big+O.pdf" />
+    <Content Include="DataStructures\HashTable\An-example-of-the-HashMap-of-HashSet-collection-pattern.png" />
+    <Content Include="DataStructures\HashTable\HashTable.txt" />
+    <Content Include="DataStructures\HashTable\README.md" />
+    <Content Include="DataStructures\LinkedList\Dummy_head.png" />
+    <Content Include="DataStructures\LinkedList\Dummy_node.drawio" />
+    <Content Include="DataStructures\LinkedList\Even Odd.png" />
+    <Content Include="DataStructures\LinkedList\LinkedListReverse.png" />
+    <Content Include="DataStructures\LinkedList\OddEvenLinkedList.drawio" />
+    <Content Include="DataStructures\LinkedList\README.md" />
+    <Content Include="DataStructures\LinkedList\TwoPointers.drawio" />
+    <Content Include="DataStructures\LinkedList\TwoPointers.png" />
+    <Content Include="DataStructures\Trees\README.md" />
+    <Content Include="DataStructures\Trees\theory.txt" />
+    <Content Include="DataStructures\Trees\Traverses.png" />
+    <Content Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\__pycache__\_DoublyLinkedBase.cpython-311.pyc" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
