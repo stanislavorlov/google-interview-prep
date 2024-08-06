@@ -1,47 +1,42 @@
-def mergeSort(arr, left, right):
-    if left < right:
-        middle = (left + right) // 2
-        
-        mergeSort(arr, left, middle)
-        mergeSort(arr, middle + 1, right)
-        
-        merge(arr, left, middle, right)
+import unittest
 
-def merge(arr, left, middle, right):
-    n1 = middle - left + 1
-    n2 = right - middle
+def merge_sort(arr):
+    if len(arr) < 2:
+        return
     
-    arrLeft = [0] * n1
-    arrRight = [0] * n2
+    mid = len(arr) // 2
+    left_arr = arr[:mid]
+    right_arr = arr[mid:]
     
-    for i in range(0, n1):
-        arrLeft[i] = arr[left + i]
-        
-    for j in range(0, n2):
-        arrRight[j] = arr[middle + j + 1]
-        
-    i, j, k = 0, 0, left
+    merge_sort(left_arr)
+    merge_sort(right_arr)
     
-    while i < n1 and j < n2:
-        if arrLeft[i] <= arrRight[j]:
-            arr[k] = arrLeft[i]
+    i = j = k = 0
+    while i < len(left_arr) and j < len(right_arr):
+        if left_arr[i] < right_arr[j]:
+            arr[k] = left_arr[i]
             i += 1
         else:
-            arr[k] = arrRight[j]
+            arr[k] = right_arr[j]
             j += 1
         k += 1
         
-    while i < n1:
-        arr[k] = arrLeft[i]
+    while i < len(left_arr):
+        arr[k] = left_arr[i]
         i += 1
         k += 1
         
-    while j < n2:
-        arr[k] = arrRight[j]
+    while j < len(right_arr):
+        arr[k] = right_arr[j]
         j += 1
         k += 1
 
-arr = [12, 11, 13, 5, 6, 7]
-mergeSort(arr, 0, len(arr) - 1)
+class TestMethods(unittest.TestCase):
+    
+    def test_sort(self):
+        arr = [12, 7, 5, 13, 6, 11]
+        merge_sort(arr)
 
-print(arr)
+        self.assertEqual(arr, [5,6,7,11,12,13])
+
+unittest.main()
