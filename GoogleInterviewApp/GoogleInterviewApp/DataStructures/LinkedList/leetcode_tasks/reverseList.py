@@ -28,7 +28,6 @@ class Solution:
             cur.next = pre
             pre = cur
             cur = post
-        
     
     def print(self, head: Optional[ListNode]):
         pointer = head

@@ -37,6 +37,26 @@ class Solution:
 
         behind.next = behind.next.next
         return dummy.next
+    
+    def removeNthFromEndHashTable(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        dummy = ListNode(0)
+        dummy.next = head
+
+        map = {}
+        pTemp = dummy
+        position, length = 0, -1
+        
+        while pTemp != None:
+            map[position] = pTemp
+            position += 1
+            length += 1
+            pTemp = pTemp.next
+            
+        node = map[length-n]
+        if node:
+            node.next = node.next.next
+            
+        return dummy.next
 
     def print(self, head: Optional[ListNode]):
         while head != None:
@@ -45,5 +65,5 @@ class Solution:
 
 solution = Solution()
 list = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
-list = solution.removeNthFromEnd2(list, 4)
+list = solution.removeNthFromEndHashTable(list, 5)
 solution.print(list)

@@ -75,3 +75,8 @@ s.update(set(t2))
 print(s)
 
 print(tuple(s))
+
+print(' ################### ')
+print(1 % 10)
+print(10 % 10)
+print(11 % 10)

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\PositionalList\FavoritesList.py</StartupFile>
+    <StartupFile>DataStructures\LinkedList\leetcode_tasks\splitLinkedList.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,8 +23,10 @@
   <ItemGroup>
     <Compile Include="Algorithms\3Sum.py" />
     <Compile Include="Algorithms\4sum.py" />
+    <Compile Include="Algorithms\isArraySorted.py" />
     <Compile Include="Algorithms\secondLargest.py" />
     <Compile Include="Algorithms\slidingWindow.py" />
+    <Compile Include="Algorithms\towersOfHanoi.py" />
     <Compile Include="DataStructures\Graph\graph.py" />
     <Compile Include="DataStructures\HashTable\HashMap.py" />
     <Compile Include="DataStructures\HashTable\HashMapUsage.py" />
@@ -64,17 +66,21 @@
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\find_middle_node.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\flatten_list.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\insertCycleList.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\insertIntoSortedList.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\isLinkedListEveny.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\ListCycle.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\list_intersection.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\mergeTwoLists.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\MyLinkedList.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\oddEvenList.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\palindromeList.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\printFromEnd.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\removeByIndex.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\removeNodeByValue.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\removeNthNode.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\reverseKGroup.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\reverseList.py" />
+    <Compile Include="DataStructures\LinkedList\leetcode_tasks\splitLinkedList.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\SumOfLists.py" />
     <Compile Include="DataStructures\LinkedList\leetcode_tasks\swapPairs.py" />
     <Compile Include="DataStructures\LinkedList\LinkedList.py" />
@@ -103,6 +109,14 @@
     <Compile Include="DataStructures\Trees\traverses_iteractive.py" />
     <Compile Include="GoogleInterviewApp.py" />
     <Compile Include="Random_Leet_Code\mergeAlternately.py" />
+    <Compile Include="Tutorial\Book\Cormen\Algorithms\matrixMultiplication.py" />
+    <Compile Include="Tutorial\Book\Cormen\Algorithms\Sorting\bubbleSort.py" />
+    <Compile Include="Tutorial\Book\Cormen\Algorithms\StrassenAlgorithm.py" />
+    <Compile Include="Tutorial\Book\Cormen\findMaximumSubarray.py" />
+    <Compile Include="Tutorial\Book\Cormen\Algorithms\Sorting\InsertionSort.py" />
+    <Compile Include="Tutorial\Book\Cormen\Algorithms\Sorting\mergeSort_recursice.py" />
+    <Compile Include="Tutorial\Book\Cormen\Algorithms\Sorting\MergeSort_recursice2.py" />
+    <Compile Include="Tutorial\Book\Cormen\Algorithms\Sorting\mergeSort_iteractive.py" />
     <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\Algorithms\algorithmAnalysis.py" />
     <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\Algorithms\binarySearch.py" />
     <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\Algorithms\CaesarCipher.py" />
@@ -141,6 +155,8 @@
     <Folder Include="Random_Leet_Code\" />
     <Folder Include="Tutorial\" />
     <Folder Include="Tutorial\Book\" />
+    <Folder Include="Tutorial\Book\Cormen\Algorithms\" />
+    <Folder Include="Tutorial\Book\Cormen\Algorithms\Sorting\" />
     <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\" />
     <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\Algorithms\" />
     <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\" />
@@ -149,11 +165,11 @@
     <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\__pycache__\" />
     <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\Trees\" />
     <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\StackQueueDequeue\" />
+    <Folder Include="Tutorial\Book\Cormen\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Books\ArraySortingAlgorithms.png" />
     <Content Include="Books\CommonDataStructuresOperations.png" />
-    <Content Include="Books\Data Structures and Algorithms in Python.pdf" />
     <Content Include="Books\introduction-to-algorithms-3rd-edition.pdf" />
     <Content Include="Books\LL+vs+Lists+-Big+O.pdf" />
     <Content Include="DataStructures\HashTable\An-example-of-the-HashMap-of-HashSet-collection-pattern.png" />

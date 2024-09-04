@@ -13,15 +13,25 @@ from collections import defaultdict
 
 
 def lengthOfLongestSubstring(input: str) -> int:
-    map = defaultdict(set)
-    idx = 0
-    for i,s in enumerate(input):
-        map[s].add(i)
-        #if s in map[idx]:
-        #    idx += 1
-        #map[idx].add(s)
+    chars = set()
+    low, high, max_l = 0, 0, 0
+    
+    while high < len(input):
+        if low == high:
+            chars.add(input[low])
+            high += 1
+        else:
+            if input[high] not in chars:
+                chars.add(input[high])
+                high += 1
+            else:
+                chars_len = len(chars)
+                chars.remove(input[high])
+                low += 1
+                if chars_len > max_l:
+                    max_l = chars_len
 
-    return 0
+    return max_l
 
 print(lengthOfLongestSubstring("abcabcbb"))
 print(lengthOfLongestSubstring("bbbbb"))
