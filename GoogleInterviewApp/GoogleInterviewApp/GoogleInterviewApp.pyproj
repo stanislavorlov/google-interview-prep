@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DataStructures\LinkedList\leetcode_tasks\splitLinkedList.py</StartupFile>
+    <StartupFile>Tutorial\LeetcoreCourse\TwoPointers\sortedSquares.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,6 +27,8 @@
     <Compile Include="Algorithms\secondLargest.py" />
     <Compile Include="Algorithms\slidingWindow.py" />
     <Compile Include="Algorithms\towersOfHanoi.py" />
+    <Compile Include="DataStructures\Arrays\slidingWindow.py" />
+    <Compile Include="DataStructures\Arrays\targetSum.py" />
     <Compile Include="DataStructures\Graph\graph.py" />
     <Compile Include="DataStructures\HashTable\HashMap.py" />
     <Compile Include="DataStructures\HashTable\HashMapUsage.py" />
@@ -88,6 +90,7 @@
     <Compile Include="DataStructures\LinkedList\udemy\binary_to_decimal.py" />
     <Compile Include="DataStructures\LinkedList\udemy\partitionList.py" />
     <Compile Include="DataStructures\LinkedList\udemy\remove_duplicates.py" />
+    <Compile Include="DataStructures\Strings\ReverseString.py" />
     <Compile Include="DataStructures\Trees\BinaryTree.py" />
     <Compile Include="DataStructures\Trees\Tasks.py" />
     <Compile Include="DataStructures\Trees\tasks\addRowTree.py" />
@@ -134,6 +137,27 @@
     <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\python.py" />
     <Compile Include="Tutorial\Cookie.py" />
     <Compile Include="Tutorial\learn.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\combine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\isPalindrome.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\isSubsequence.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\recursion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\reverseString.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\sortedSquares.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\targetSum.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Tutorial\pet.py" />
     <Compile Include="Tutorial\PythonTutorial.py" />
     <Compile Include="Tutorial\StacksAndQueues.py" />
@@ -149,6 +173,8 @@
     <Folder Include="DataStructures\LinkedList\" />
     <Folder Include="DataStructures\LinkedList\leetcode_tasks\" />
     <Folder Include="DataStructures\LinkedList\udemy\" />
+    <Folder Include="DataStructures\Arrays\" />
+    <Folder Include="DataStructures\Strings\" />
     <Folder Include="DataStructures\Trees\" />
     <Folder Include="DataStructures\Trees\tasks\" />
     <Folder Include="DataStructures\Tries\" />
@@ -166,6 +192,8 @@
     <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\Trees\" />
     <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\StackQueueDequeue\" />
     <Folder Include="Tutorial\Book\Cormen\" />
+    <Folder Include="Tutorial\LeetcoreCourse\" />
+    <Folder Include="Tutorial\LeetcoreCourse\TwoPointers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Books\ArraySortingAlgorithms.png" />
@@ -187,6 +215,7 @@
     <Content Include="DataStructures\Trees\theory.txt" />
     <Content Include="DataStructures\Trees\Traverses.png" />
     <Content Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\LinkedLists\__pycache__\_DoublyLinkedBase.cpython-311.pyc" />
+    <Content Include="Tutorial\LeetcoreCourse\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
