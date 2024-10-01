@@ -14,6 +14,18 @@ def find_length_subarr(nums, k):
         
     return ans
 
+def findLongestSubarr(nums, k):
+    ans = sum = 0
+    left = right = 0
+    for right in range(len(k)):
+        sum += nums[right]
+        while sum > k:
+            sum -= nums[left]
+            left += 1
+        ans = max(ans, sum)
+        
+    return ans
+
 def find_longest_subarr(nums, k):
     left = cur = 0
     ans = []

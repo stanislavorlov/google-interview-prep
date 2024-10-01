@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tutorial\LeetcoreCourse\TwoPointers\sortedSquares.py</StartupFile>
+    <StartupFile>Tutorial\LeetcoreCourse\SlidingWindow\fixedWindow.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,7 +27,13 @@
     <Compile Include="Algorithms\secondLargest.py" />
     <Compile Include="Algorithms\slidingWindow.py" />
     <Compile Include="Algorithms\towersOfHanoi.py" />
-    <Compile Include="DataStructures\Arrays\slidingWindow.py" />
+    <Compile Include="DataStructures\Arrays\numSubarrayProductLessThanK.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\SlidingWindow\fixedWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\SlidingWindow\slidingWindow.py" />
     <Compile Include="DataStructures\Arrays\targetSum.py" />
     <Compile Include="DataStructures\Graph\graph.py" />
     <Compile Include="DataStructures\HashTable\HashMap.py" />
@@ -193,6 +199,7 @@
     <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\StackQueueDequeue\" />
     <Folder Include="Tutorial\Book\Cormen\" />
     <Folder Include="Tutorial\LeetcoreCourse\" />
+    <Folder Include="Tutorial\LeetcoreCourse\SlidingWindow\" />
     <Folder Include="Tutorial\LeetcoreCourse\TwoPointers\" />
   </ItemGroup>
   <ItemGroup>
