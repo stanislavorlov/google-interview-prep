@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tutorial\LeetcoreCourse\SlidingWindow\fixedWindow.py</StartupFile>
+    <StartupFile>DataStructures\Arrays\maximumAverageSubarray.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,6 +27,7 @@
     <Compile Include="Algorithms\secondLargest.py" />
     <Compile Include="Algorithms\slidingWindow.py" />
     <Compile Include="Algorithms\towersOfHanoi.py" />
+    <Compile Include="DataStructures\Arrays\maximumAverageSubarray.py" />
     <Compile Include="DataStructures\Arrays\numSubarrayProductLessThanK.py">
       <SubType>Code</SubType>
     </Compile>
