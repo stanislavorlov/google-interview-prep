@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DataStructures\Arrays\findMaxConsecutiveOnes.py</StartupFile>
+    <StartupFile>DataStructures\Arrays\kRadiusAverage.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,11 +28,15 @@
     <Compile Include="Algorithms\slidingWindow.py" />
     <Compile Include="Algorithms\towersOfHanoi.py" />
     <Compile Include="DataStructures\Arrays\findMaxConsecutiveOnes.py" />
+    <Compile Include="DataStructures\Arrays\kRadiusAverage.py" />
     <Compile Include="DataStructures\Arrays\longestOnes.py" />
     <Compile Include="DataStructures\Arrays\maximumAverageSubarray.py" />
+    <Compile Include="DataStructures\Arrays\minStartValue.py" />
     <Compile Include="DataStructures\Arrays\numSubarrayProductLessThanK.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DataStructures\Arrays\prefixSum.py" />
+    <Compile Include="DataStructures\Arrays\runningSumArray.py" />
     <Compile Include="Tutorial\LeetcoreCourse\SlidingWindow\fixedWindow.py">
       <SubType>Code</SubType>
     </Compile>
