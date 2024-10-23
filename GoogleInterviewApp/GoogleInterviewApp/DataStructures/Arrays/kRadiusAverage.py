@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/k-radius-subarray-averages/description/
+
 # You are given a 0-indexed array nums of n integers, and an integer k.
 
 # The k-radius average for a subarray of nums centered at some index i with the radius k is 
