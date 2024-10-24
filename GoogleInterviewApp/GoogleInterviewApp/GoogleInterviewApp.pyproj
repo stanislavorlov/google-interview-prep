@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DataStructures\Arrays\minStartValue.py</StartupFile>
+    <StartupFile>Tutorial\LeetcoreCourse\TwoPointers\reverseWords.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -165,6 +165,7 @@
     <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\reverseString.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\reverseWords.py" />
     <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\sortedSquares.py">
       <SubType>Code</SubType>
     </Compile>
