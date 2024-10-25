@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tutorial\LeetcoreCourse\TwoPointers\reverseOnlyLetters.py</StartupFile>
+    <StartupFile>Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\reverseOnlyLetters.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -39,10 +39,10 @@
     <Compile Include="DataStructures\Arrays\runningSumArray.py" />
     <Compile Include="DataStructures\Arrays\sortArrayByParity.py" />
     <Compile Include="DataStructures\Arrays\sortArrayByParityII.py" />
-    <Compile Include="Tutorial\LeetcoreCourse\SlidingWindow\fixedWindow.py">
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\fixedWindow.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Tutorial\LeetcoreCourse\SlidingWindow\slidingWindow.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\slidingWindow.py" />
     <Compile Include="DataStructures\Arrays\targetSum.py" />
     <Compile Include="DataStructures\Graph\graph.py" />
     <Compile Include="DataStructures\HashTable\HashMap.py" />
@@ -152,27 +152,27 @@
     <Compile Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\python.py" />
     <Compile Include="Tutorial\Cookie.py" />
     <Compile Include="Tutorial\learn.py" />
-    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\combine.py">
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\combine.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\isPalindrome.py">
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\isPalindrome.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\isSubsequence.py">
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\isSubsequence.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\recursion.py">
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\recursion.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\reverseOnlyLetters.py" />
-    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\reverseString.py">
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\reverseOnlyLetters.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\reverseString.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\reverseWords.py" />
-    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\sortedSquares.py">
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\reverseWords.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\sortedSquares.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\targetSum.py">
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\targetSum.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tutorial\pet.py" />
@@ -210,8 +210,9 @@
     <Folder Include="Tutorial\Book\DataStructuresAndAlgorithms_Python\DataStructures\StackQueueDequeue\" />
     <Folder Include="Tutorial\Book\Cormen\" />
     <Folder Include="Tutorial\LeetcoreCourse\" />
-    <Folder Include="Tutorial\LeetcoreCourse\SlidingWindow\" />
-    <Folder Include="Tutorial\LeetcoreCourse\TwoPointers\" />
+    <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\" />
+    <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\" />
+    <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Books\ArraySortingAlgorithms.png" />
