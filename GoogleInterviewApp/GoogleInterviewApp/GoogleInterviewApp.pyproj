@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tutorial\LeetcoreCourse\TwoPointers\reverseWords.py</StartupFile>
+    <StartupFile>Tutorial\LeetcoreCourse\TwoPointers\reverseOnlyLetters.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Algorithms\3Sum.py" />
+    <Compile Include="DataStructures\Arrays\3Sum.py" />
     <Compile Include="Algorithms\4sum.py" />
     <Compile Include="Algorithms\isArraySorted.py" />
     <Compile Include="Algorithms\secondLargest.py" />
@@ -37,6 +37,8 @@
     </Compile>
     <Compile Include="DataStructures\Arrays\prefixSum.py" />
     <Compile Include="DataStructures\Arrays\runningSumArray.py" />
+    <Compile Include="DataStructures\Arrays\sortArrayByParity.py" />
+    <Compile Include="DataStructures\Arrays\sortArrayByParityII.py" />
     <Compile Include="Tutorial\LeetcoreCourse\SlidingWindow\fixedWindow.py">
       <SubType>Code</SubType>
     </Compile>
@@ -162,6 +164,7 @@
     <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\recursion.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\reverseOnlyLetters.py" />
     <Compile Include="Tutorial\LeetcoreCourse\TwoPointers\reverseString.py">
       <SubType>Code</SubType>
     </Compile>
