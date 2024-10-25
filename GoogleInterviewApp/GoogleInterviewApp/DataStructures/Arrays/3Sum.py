@@ -59,10 +59,8 @@ class Solution:
                     if complement in seen and seen[complement] == i:
                         res.add(tuple(sorted((val1, val2, complement))))
                     seen[val2] = i
-        return res
+        return  [list(x) for x in res]
         
 solution = Solution()
 nums = [-1,0,1,2,-1,-4]
-# -4, -1, -1,  0,  1,  2
-#  0   1   2   3   4   5
-print(solution.threeSum3(nums))
+print(solution.threeSum3(nums))     # [[-1,-1,2],[-1,0,1]]
