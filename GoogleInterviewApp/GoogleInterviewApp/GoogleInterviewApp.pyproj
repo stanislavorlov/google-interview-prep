@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\reverseOnlyLetters.py</StartupFile>
+    <StartupFile>Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\reversePrefix.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -161,10 +161,13 @@
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\isSubsequence.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\minimumCommonValue.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\moveZeroes.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\recursion.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\reverseOnlyLetters.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\reversePrefix.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\reverseString.py">
       <SubType>Code</SubType>
     </Compile>
