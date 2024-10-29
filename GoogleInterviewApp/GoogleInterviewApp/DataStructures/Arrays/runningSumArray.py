@@ -22,3 +22,6 @@ print(solution.runningSum(nums))
 
 nums = [3,1,2,10,1]
 print(solution.runningSum(nums))
+
+nums = [-2, 0, 3, -5, 2, -1]
+print(solution.runningSum(nums))

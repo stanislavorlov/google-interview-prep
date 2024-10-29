@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\reversePrefix.py</StartupFile>
+    <StartupFile>Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\findSubstring.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -39,9 +39,18 @@
     <Compile Include="DataStructures\Arrays\runningSumArray.py" />
     <Compile Include="DataStructures\Arrays\sortArrayByParity.py" />
     <Compile Include="DataStructures\Arrays\sortArrayByParityII.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\PrefixSum\largestAltitude.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\PrefixSum\pivotIndex.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\PrefixSum\rangeSumQuery.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\reverseStrII.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\equalSubstring.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\findSubstring.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\fixedWindow.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\lengthOfLongestSubstring.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\maxVowels.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\minSubArrayLen.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\slidingWindow.py" />
     <Compile Include="DataStructures\Arrays\targetSum.py" />
     <Compile Include="DataStructures\Graph\graph.py" />
@@ -155,6 +164,7 @@
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\combine.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\findRadius.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\isPalindrome.py">
       <SubType>Code</SubType>
     </Compile>
@@ -214,6 +224,7 @@
     <Folder Include="Tutorial\Book\Cormen\" />
     <Folder Include="Tutorial\LeetcoreCourse\" />
     <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\" />
+    <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\PrefixSum\" />
     <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\" />
     <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\" />
   </ItemGroup>
