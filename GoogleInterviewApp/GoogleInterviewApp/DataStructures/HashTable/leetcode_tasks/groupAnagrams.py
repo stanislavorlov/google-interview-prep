@@ -43,4 +43,11 @@ def groupAnagrams(strs: list[str]) -> list[list[str]]:
 
     return list(dict.values())
 
-print(groupAnagrams(strs))
+def groupAnagrams2(strs: list[str]) -> list[list[str]]:
+    res = collections.defaultdict(list)
+    for val in strs:
+        res[tuple(sorted(val))].append(val)
+
+    return list(res.values())
+
+print(groupAnagrams2(strs))
