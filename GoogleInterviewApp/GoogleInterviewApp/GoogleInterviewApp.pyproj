@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\findSubstring.py</StartupFile>
+    <StartupFile>Neetcode150\longestConsecutive.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -39,18 +39,33 @@
     <Compile Include="DataStructures\Arrays\runningSumArray.py" />
     <Compile Include="DataStructures\Arrays\sortArrayByParity.py" />
     <Compile Include="DataStructures\Arrays\sortArrayByParityII.py" />
+    <Compile Include="Neetcode150\containsDuplicate.py" />
+    <Compile Include="Neetcode150\encodeDecodeString.py" />
+    <Compile Include="Neetcode150\groupAnagrams.py" />
+    <Compile Include="Neetcode150\isAnagram.py" />
+    <Compile Include="Neetcode150\longestConsecutive.py" />
+    <Compile Include="Neetcode150\productExceptSelf.py" />
+    <Compile Include="Neetcode150\topKFrequent.py" />
+    <Compile Include="Neetcode150\twoSum.py" />
+    <Compile Include="Neetcode150\validSudoku.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\PrefixSum\largestAltitude.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\PrefixSum\pivotIndex.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\PrefixSum\rangeSumQuery.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\reverseStrII.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\equalSubstring.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\findRepeatedDnaSequences.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\findSubstring.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\fixedWindow.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\lengthOfLongestSubstring.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\lengthOfLongestSubstringKDistinct.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\lengthOfLongestSubstringTwoDistinct.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\longestSubstring.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\maxSlidingWindow.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\maxVowels.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\minSubArrayLen.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\minWindow.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\slidingWindow.py" />
     <Compile Include="DataStructures\Arrays\targetSum.py" />
     <Compile Include="DataStructures\Graph\graph.py" />
@@ -188,6 +203,11 @@
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\targetSum.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\areOccurrencesEqual.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\checkIfPangram.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\countingElements.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\intersectionMultipleArrays.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\missingNumber.py" />
     <Compile Include="Tutorial\pet.py" />
     <Compile Include="Tutorial\PythonTutorial.py" />
     <Compile Include="Tutorial\StacksAndQueues.py" />
@@ -208,6 +228,7 @@
     <Folder Include="DataStructures\Trees\" />
     <Folder Include="DataStructures\Trees\tasks\" />
     <Folder Include="DataStructures\Tries\" />
+    <Folder Include="Neetcode150\" />
     <Folder Include="Random_Leet_Code\" />
     <Folder Include="Tutorial\" />
     <Folder Include="Tutorial\Book\" />
@@ -227,6 +248,7 @@
     <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\PrefixSum\" />
     <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\" />
     <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\" />
+    <Folder Include="Tutorial\LeetcoreCourse\Hashing\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Books\ArraySortingAlgorithms.png" />
