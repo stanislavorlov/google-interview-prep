@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Neetcode150\longestConsecutive.py</StartupFile>
+    <StartupFile>Neetcode150\productExceptSelf.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
