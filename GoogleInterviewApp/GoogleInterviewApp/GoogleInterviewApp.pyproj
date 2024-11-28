@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Neetcode150\validPalindrome.py</StartupFile>
+    <StartupFile>Neetcode150\3Sum.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -39,6 +39,7 @@
     <Compile Include="DataStructures\Arrays\runningSumArray.py" />
     <Compile Include="DataStructures\Arrays\sortArrayByParity.py" />
     <Compile Include="DataStructures\Arrays\sortArrayByParityII.py" />
+    <Compile Include="Neetcode150\3Sum.py" />
     <Compile Include="Neetcode150\containsDuplicate.py" />
     <Compile Include="Neetcode150\encodeDecodeString.py" />
     <Compile Include="Neetcode150\groupAnagrams.py" />
@@ -47,6 +48,7 @@
     <Compile Include="Neetcode150\productExceptSelf.py" />
     <Compile Include="Neetcode150\topKFrequent.py" />
     <Compile Include="Neetcode150\twoSum.py" />
+    <Compile Include="Neetcode150\twoSumII.py" />
     <Compile Include="Neetcode150\validPalindrome.py" />
     <Compile Include="Neetcode150\validSudoku.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\PrefixSum\largestAltitude.py" />
