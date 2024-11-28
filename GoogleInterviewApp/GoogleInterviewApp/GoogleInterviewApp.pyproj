@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Neetcode150\3Sum.py</StartupFile>
+    <StartupFile>Neetcode150\maxWaterContainer.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -45,6 +45,7 @@
     <Compile Include="Neetcode150\groupAnagrams.py" />
     <Compile Include="Neetcode150\isAnagram.py" />
     <Compile Include="Neetcode150\longestConsecutive.py" />
+    <Compile Include="Neetcode150\maxWaterContainer.py" />
     <Compile Include="Neetcode150\productExceptSelf.py" />
     <Compile Include="Neetcode150\topKFrequent.py" />
     <Compile Include="Neetcode150\twoSum.py" />
