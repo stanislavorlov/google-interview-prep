@@ -6,17 +6,6 @@
 from typing import List
 
 class Solution:
-    def maxArea2(self, heights: List[int]) -> int:
-        answer = 0
-        for r in range(len(heights)):
-            l = 0
-            while l <= r:
-                square = (r - l) * min(heights[l], heights[r])
-                answer = max(answer, square)
-                l += 1
-        
-        return answer
-    
     def maxArea(self, heights: List[int]) -> int:
         answer = 0
         l, r = 0, len(heights) - 1
