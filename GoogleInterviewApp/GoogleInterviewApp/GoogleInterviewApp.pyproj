@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tutorial\LeetcoreCourse\Hashing\findWinners.py</StartupFile>
+    <StartupFile>Tutorial\LeetcoreCourse\Hashing\largestUniqueNumber.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -216,6 +216,7 @@
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\countingElements.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\findWinners.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\intersectionMultipleArrays.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\largestUniqueNumber.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\missingNumber.py" />
     <Compile Include="Tutorial\pet.py" />
     <Compile Include="Tutorial\PythonTutorial.py" />
