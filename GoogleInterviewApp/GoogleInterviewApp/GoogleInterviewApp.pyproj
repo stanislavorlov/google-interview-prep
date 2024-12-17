@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Neetcode150\maxWaterContainer.py</StartupFile>
+    <StartupFile>Tutorial\LeetcoreCourse\Hashing\findWinners.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -45,9 +45,13 @@
     <Compile Include="Neetcode150\groupAnagrams.py" />
     <Compile Include="Neetcode150\isAnagram.py" />
     <Compile Include="Neetcode150\longestConsecutive.py" />
+    <Compile Include="Neetcode150\maxProfit.py" />
     <Compile Include="Neetcode150\maxWaterContainer.py" />
     <Compile Include="Neetcode150\productExceptSelf.py" />
     <Compile Include="Neetcode150\topKFrequent.py" />
+    <Compile Include="Neetcode150\trappingRainWatter.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Neetcode150\twoSum.py" />
     <Compile Include="Neetcode150\twoSumII.py" />
     <Compile Include="Neetcode150\validPalindrome.py" />
@@ -210,6 +214,7 @@
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\areOccurrencesEqual.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\checkIfPangram.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\countingElements.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\findWinners.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\intersectionMultipleArrays.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\missingNumber.py" />
     <Compile Include="Tutorial\pet.py" />
