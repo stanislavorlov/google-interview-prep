@@ -19,19 +19,11 @@ class Solution:
     def findMaxLength(self, nums: List[int]) -> int:
         n, left, ans = len(nums), 0, 0
         
-        for left in range(n):
-            cnt = defaultdict(int)
-            right = left + 1
-            
-            while right < n:
-                num_zeroes, num_ones = 2-nums[right-1]-nums[right], nums[right-1]+nums[right]
+        for right in range(n):
+            left = right % 2
+            while left < right:
                 
-                if num_zeroes == num_ones:
-                    ans = max(ans, right-left+1)
-
-                right += 1
-            
-        return ans
+                left = left + 1
 
 class TestMethods(unittest.TestCase):
     
@@ -55,12 +47,18 @@ class TestMethods(unittest.TestCase):
         nums = [1,1,0,0]
         ans = self._solution.findMaxLength(nums)
 
-        self.assertEqual(ans, 2)
+        self.assertEqual(ans, 4)
         
     def test_fourth(self):
         nums = [1,1,1,1,1,1,1,1]
         ans = self._solution.findMaxLength(nums)
 
         self.assertEqual(ans, 0)
+        
+    def test_fifth(self):
+        nums = [1,1,1,0,1,0,1,0,1,0,0,0]
+        ans = self._solution.findMaxLength(nums)
+
+        self.assertEqual(ans, 8)
 
 unittest.main()

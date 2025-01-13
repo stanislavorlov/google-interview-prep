@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d041a4eb-caed-43d3-8aa8-bbedc29d7498</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tutorial\LeetcoreCourse\Hashing\largestUniqueNumber.py</StartupFile>
+    <StartupFile>Tutorial\LeetcoreCourse\Hashing\pathCrossing.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -40,13 +40,17 @@
     <Compile Include="DataStructures\Arrays\sortArrayByParity.py" />
     <Compile Include="DataStructures\Arrays\sortArrayByParityII.py" />
     <Compile Include="Neetcode150\3Sum.py" />
+    <Compile Include="Neetcode150\characterReplacement.py" />
+    <Compile Include="Neetcode150\checkInclusion.py" />
     <Compile Include="Neetcode150\containsDuplicate.py" />
     <Compile Include="Neetcode150\encodeDecodeString.py" />
     <Compile Include="Neetcode150\groupAnagrams.py" />
     <Compile Include="Neetcode150\isAnagram.py" />
+    <Compile Include="Neetcode150\lengthOfLongestSubstring.py" />
     <Compile Include="Neetcode150\longestConsecutive.py" />
     <Compile Include="Neetcode150\maxProfit.py" />
     <Compile Include="Neetcode150\maxWaterContainer.py" />
+    <Compile Include="Neetcode150\minWindow.py" />
     <Compile Include="Neetcode150\productExceptSelf.py" />
     <Compile Include="Neetcode150\topKFrequent.py" />
     <Compile Include="Neetcode150\trappingRainWatter.py">
@@ -212,12 +216,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\areOccurrencesEqual.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\canConstruct.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\checkIfPangram.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\countingElements.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\destCity.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\equalPairs.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\findMaxLength.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\findWinners.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\intersectionMultipleArrays.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\largestUniqueNumber.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\maxNumberOfBalloons.py" />
     <Compile Include="Tutorial\LeetcoreCourse\Hashing\missingNumber.py" />
+    <Compile Include="Tutorial\LeetcoreCourse\Hashing\pathCrossing.py" />
     <Compile Include="Tutorial\pet.py" />
     <Compile Include="Tutorial\PythonTutorial.py" />
     <Compile Include="Tutorial\StacksAndQueues.py" />
@@ -259,6 +269,7 @@
     <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\SlidingWindow\" />
     <Folder Include="Tutorial\LeetcoreCourse\Arrays&amp;Strings\TwoPointers\" />
     <Folder Include="Tutorial\LeetcoreCourse\Hashing\" />
+    <Folder Include="Tutorial\LeetcoreCourse\LinkedList\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Books\ArraySortingAlgorithms.png" />
