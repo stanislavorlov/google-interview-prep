@@ -1,4 +1,4 @@
-# Given an array the task is to check whether or not there exist two elements with given sum
+# Given an array the task is to check whether there exist two elements with given sum
 
 # time O(n)
 # space O(n)
