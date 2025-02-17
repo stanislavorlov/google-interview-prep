@@ -1,4 +1,6 @@
-# You are given two strings word1 and word2. 
+# https://leetcode.com/problems/merge-strings-alternately/description/
+
+# You are given two strings word1 and word2.
 # Merge the strings by adding letters in alternating order, starting with word1. 
 # If a string is longer than the other, append the additional letters onto the end of the merged string.
 
@@ -38,8 +40,18 @@ class Solution:
             str = str + w1 + w2
 
         return str
+
+    def mergeAlternately3(self, word1: str, word2: str) -> str:
+        output = ""
+        word1_len, word2_len, idx = len(word1), len(word2), 0
+        for idx in range(min(word1_len, word2_len)):
+            output += word1[idx]
+            output += word2[idx]
+
+        output += word2[idx+1:] if word1_len < word2_len else word1[idx+1:]
+        return output
     
 solution = Solution()
-print(solution.mergeAlternately2("abc", "pqr"))      #   "apbqcr"
-print(solution.mergeAlternately2("ab", "pqrs"))      #   "apbqrs"
-print(solution.mergeAlternately2("abcd", "pq"))      #   "apbqcd"
+print(solution.mergeAlternately3("abc", "pqr"))      #   "apbqcr"
+print(solution.mergeAlternately3("ab", "pqrs"))      #   "apbqrs"
+print(solution.mergeAlternately3("abcd", "pq"))      #   "apbqcd"
