@@ -32,6 +32,26 @@ class Solution:
 
         return dummy.next
 
+    def swap_pairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next:
+            return head
+
+        dummy = head.next
+        prev = None
+        while head and head.next:
+            if prev:
+                prev.next = head.next
+            prev = head
+
+            next_ = head.next.next
+            head.next.next = head
+
+            head.next = next_
+            head = next_
+
+        return dummy
+
+
     def print_list(self, head: Optional[ListNode]):
         pointer = head
         while pointer:
@@ -40,5 +60,5 @@ class Solution:
 
 solution = Solution()
 list = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))
-list = solution.swapPairs(list)
+list = solution.swap_pairs(list)
 solution.print_list(list)
