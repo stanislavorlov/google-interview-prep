@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
+
 from typing import Optional
 
 class ListNode:
@@ -58,6 +60,21 @@ class Solution:
             
         return dummy.next
 
+    def removeNthFromEnd3(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        dummy = ListNode(0, head)
+        before = after = dummy
+
+        for _ in range(n+1):
+            after = after.next
+
+        while after:
+            after = after.next
+            before = before.next
+
+        before.next = before.next.next
+
+        return dummy.next
+
     def print(self, head: Optional[ListNode]):
         while head != None:
             print(head.val)
@@ -65,5 +82,5 @@ class Solution:
 
 solution = Solution()
 list = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
-list = solution.removeNthFromEndHashTable(list, 5)
+list = solution.removeNthFromEnd3(list, 5)
 solution.print(list)
