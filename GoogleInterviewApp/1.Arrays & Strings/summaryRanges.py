@@ -3,7 +3,8 @@ from typing import List
 
 
 class Solution:
-    def summaryRanges(self, nums: List[int]) -> List[str]:
+    @staticmethod
+    def summary_ranges(nums: List[int]) -> List[str]:
         output = []
         n = len(nums)
         index = 0
@@ -21,8 +22,8 @@ class Solution:
         return output
 
 solution = Solution()
-nums = [0,1,2,4,5,7]
-print(solution.summaryRanges(nums))         # ["0->2","4->5","7"]
+input_list = [0, 1, 2, 4, 5, 7]
+print(solution.summary_ranges(input_list))         # ["0->2","4->5","7"]
 
-nums = [0,2,3,4,6,8,9]
-print(solution.summaryRanges(nums))         # ["0","2->4","6","8->9"]
+input_list = [0, 2, 3, 4, 6, 8, 9]
+print(solution.summary_ranges(input_list))         # ["0","2->4","6","8->9"]
