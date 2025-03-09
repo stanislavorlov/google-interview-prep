@@ -31,7 +31,7 @@ def counting_sort(arr, exp1):
     for i in range(0, len(arr)):
         arr[i] = output[i]
 
-# Θ(d(k+n)) 
+# Θ(d(k+n))
 def radix_sort(arr):
     max_elem = max(arr)
 
@@ -43,8 +43,8 @@ def radix_sort(arr):
         counting_sort(arr, exp)
         exp *= 10
 
-arr = [170, 45, 75, 90, 802, 24, 2, 66]
+input_arr = [170, 45, 75, 90, 802, 24, 2, 66]
 
-radix_sort(arr)
+radix_sort(input_arr)
 
-print(arr)
+print(input_arr)

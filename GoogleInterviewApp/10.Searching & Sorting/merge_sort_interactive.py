@@ -1,4 +1,4 @@
-def mergeSort(arr):
+def merge_sort(arr):
     width = 1
     while width < len(arr) - 1:
         left = 0
@@ -43,6 +43,6 @@ def merge(arr, low, mid, high):
         k += 1
         
 arr = [12, 11, 13, 5, 6, 7]
-mergeSort(arr)
+merge_sort(arr)
 
 print(arr)
