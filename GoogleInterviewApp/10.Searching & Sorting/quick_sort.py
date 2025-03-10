@@ -1,7 +1,9 @@
 import random
 
+def swap(arr, i, j):
+    arr[i], arr[j] = arr[j], arr[i]
 
-def partition(arr, low, high):
+def partition_high(arr, low, high):
     pivot = arr[high]               # Could arr[low], arr[high], arr[(low+high) //2], arr[random(low, high)]
     i = low - 1
 
@@ -14,14 +16,32 @@ def partition(arr, low, high):
 
     return i+1
 
+def partition_low(arr, low, high):
+    pivot = arr[low]
+    i = low + 1
+    end = high
+
+    while True:
+        while i <= end and arr[end] >= pivot:
+            end = end - 1
+
+        while i <= end and arr[i] <= pivot:
+            i = i + 1
+
+        if i <= end:
+            swap(arr, i, end)
+        else:
+            break
+
+    swap(arr, low, end)
+
+    return end
+
 def randomized_partition(arr, low, high):
     i = random.randrange(low, high)
     swap(arr, high, i)
 
-    return partition(arr, low, high)
-
-def swap(arr, i, j):
-    arr[i], arr[j] = arr[j], arr[i]
+    return partition_high(arr, low, high)
 
 def hoare_partition(arr, low, high):
     pivot = arr[low]
@@ -46,7 +66,7 @@ def hoare_partition(arr, low, high):
 # best case: T(n)=2T(n/2)+Θ(n)=Θ(n lgn)
 def quick_sort(arr, low, high):
     if low < high:
-        q = partition(arr, low, high)
+        q = partition_high(arr, low, high)
 
         quick_sort(arr, low, q-1)
         quick_sort(arr, q+1, high)
@@ -65,7 +85,7 @@ def quick_sort_hoare(arr, low, high):
 
 def recursive_quick_sort(arr, low, high):
     while low < high:
-        q = partition(arr, low, high)
+        q = partition_high(arr, low, high)
         recursive_quick_sort(arr, low, q - 1)
         low = q + 1
 
