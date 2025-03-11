@@ -23,7 +23,7 @@ def randomized_partition(arr, low, high):
     return partition_high(arr, low, high)
 
 # returns the ith smallest element
-def randomized_select(arr, left, right, i):
+def randomized_search(arr, left, right, i):
     if left == right:
         return arr[left]
 
@@ -32,9 +32,9 @@ def randomized_select(arr, left, right, i):
     if i == mid:
         return arr[partition]
     elif i < mid:
-        return randomized_select(arr, left, partition-1, i)
+        return randomized_search(arr, left, partition - 1, i)
     else:
-        return randomized_select(arr, partition+1, right, i-mid)
+        return randomized_search(arr, partition + 1, right, i - mid)
 
 array = [-2, 7, 15, -14, 0, 15, 0, 7, -7, -4, -13, 5, 8, -14, 12]
-print(randomized_select(array, 0, len(array)-1, 6))
+print(randomized_search(array, 0, len(array) - 1, 6))
