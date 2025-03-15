@@ -26,7 +26,7 @@ class Solution:
             pre = cur
             cur = next
 
-        # 2 pointers to checks if halfs are equal
+        # 2 pointers to checks if half's are equal
         first_half, second_half = head, pre
         # head, pre
         while first_half and second_half:

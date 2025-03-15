@@ -12,29 +12,21 @@ class ListNode:
 
 class Solution:
     def swapNodes(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        dummy = ListNode(0, head)
-        behind = ahead = dummy
-        pre_behind = None
-        pre_ahead = None
+        length = 0
+        front = end = None
+        current = head
+        while current:
+            length += 1
+            if end:
+                end = end.next
+            if length == k:
+                front = current
+                end = head
+            current = current.next
 
-        for _ in range(k):
-            pre_behind = behind
-            behind = behind.next
-
-        first = behind
-        while behind:
-            behind = behind.next
-            pre_ahead = ahead
-            ahead = ahead.next
-        second = ahead
-
-        print(f'nodes to replace: {first.val} {second.val}; pre-nodes: {pre_behind.val} {pre_ahead.val}')
-
-        tmp1 = pre_behind.next
-        pre_behind.next = second
-        tmp2 = second.next
-        second.next = first
-        first.next = tmp2
+        temp = front.val
+        front.val = end.val
+        end.val = temp
 
         return head
 
