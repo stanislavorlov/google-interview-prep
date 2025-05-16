@@ -1,5 +1,5 @@
 # Contiguous Array
-# https://leetcode.com/explore/featured/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4845/
+# https://leetcode.com/problems/contiguous-array/editorial/
 
 # Given a binary array nums, return the maximum length of a contiguous subarray with an equal number of 0 and 1.
 

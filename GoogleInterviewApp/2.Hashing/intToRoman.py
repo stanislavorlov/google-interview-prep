@@ -51,31 +51,31 @@ class TestMethods(unittest.TestCase):
 
     def test_first(self):
         solution = Solution()
-        ans = solution.intToRoman2(3749)
+        ans = solution.intToRoman(3749)
 
         self.assertEqual("MMMDCCXLIX", ans)
 
     def test_second(self):
         solution = Solution()
-        ans = solution.intToRoman2(58)
+        ans = solution.intToRoman(58)
 
         self.assertEqual("LVIII", ans)
 
     def test_third(self):
         solution = Solution()
-        ans = solution.intToRoman2(1994)
+        ans = solution.intToRoman(1994)
 
         self.assertEqual("MCMXCIV", ans)
 
     def test_ten(self):
         solution = Solution()
-        ans = solution.intToRoman2(10)
+        ans = solution.intToRoman(10)
 
         self.assertEqual("X", ans)
 
     def test_20(self):
         solution = Solution()
-        ans = solution.intToRoman2(20)
+        ans = solution.intToRoman(20)
 
         self.assertEqual("XX", ans)
 

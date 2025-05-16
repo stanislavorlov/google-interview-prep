@@ -1,4 +1,4 @@
-# https://leetcode.com/explore/featured/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4601/
+# https://leetcode.com/problems/check-if-the-sentence-is-pangram/
 
 # Check if the Sentence Is Pangram
 # A pangram is a sentence where every letter of the English alphabet appears at least once.

@@ -1,4 +1,6 @@
-# You are given an integer array nums of even length. 
+# https://leetcode.com/problems/split-the-array/description/
+
+# You are given an integer array nums of even length.
 # You have to split the array into two parts nums1 and nums2 such that:
 
 # nums1.length == nums2.length == nums.length / 2.

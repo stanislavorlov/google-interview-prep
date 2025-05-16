@@ -1,4 +1,4 @@
-# https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4606/
+# https://leetcode.com/problems/find-players-with-zero-or-one-losses/editorial/
 
 # You are given an integer array matches where matches[i] = [winneri, loseri] 
 # indicates that the player winneri defeated player loseri in a match.

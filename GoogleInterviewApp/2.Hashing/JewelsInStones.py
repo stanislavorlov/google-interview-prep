@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/jewels-and-stones/description/
+
 #All the characters of jewels are unique.
 # calculate number of jewels in stones
 # Letters are case sensitive

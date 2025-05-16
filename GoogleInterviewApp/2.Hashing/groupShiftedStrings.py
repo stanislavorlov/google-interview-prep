@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/group-shifted-strings/description/
+
 # For example, we can keep shifting "abc" to form the sequence: "abc" -> "bcd" -> ... -> "xyz".
 # Given an array of strings strings, group all strings[i] that belong to the same shifting sequence.
 

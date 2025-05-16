@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/maximum-number-of-balloons/editorial/
+
 # Given a string text, you want to use the characters of text to form as many instances of the word "balloon" as possible.
 
 # Input: text = "nlaebolko"

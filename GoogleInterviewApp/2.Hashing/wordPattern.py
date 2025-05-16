@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/word-pattern/description/
+
 # Given a pattern and a string s, find if s follows the same pattern.
 # Input: pattern = "abba", s = "dog cat cat dog"
 # Output: true

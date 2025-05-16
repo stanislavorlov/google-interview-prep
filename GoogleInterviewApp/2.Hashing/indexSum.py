@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/minimum-index-sum-of-two-lists/description/
+
 # Given two arrays of strings list1 and list2, find the common strings with the least index sum.
 
 # Input: list1 = ["happy","sad","good"], list2 = ["sad","happy","good"]

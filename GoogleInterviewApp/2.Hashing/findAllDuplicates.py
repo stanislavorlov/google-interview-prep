@@ -1,4 +1,6 @@
-# Given an integer array nums of length n where all the integers of nums are in the range [1, n] 
+# https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
+
+# Given an integer array nums of length n where all the integers of nums are in the range [1, n]
 # and each integer appears once or twice, return an array of all the integers that appears twice.
 
 # Input: nums = [4,3,2,7,8,2,3,1]
