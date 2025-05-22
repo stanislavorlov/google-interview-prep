@@ -1,28 +1,13 @@
+import sys
 from typing import Optional
 
 
 class TreeNode:
     def __init__(self, val: int, left = None, right = None):
-        self._val = val
-        self._left: Optional[TreeNode] = left
-        self._right: Optional[TreeNode] = right
-        self._parent: Optional[TreeNode] = None
-
-    @property
-    def val(self):
-        return self._val
-
-    @property
-    def left(self):
-        return self._left
-
-    @property
-    def right(self):
-        return self._right
-
-    @property
-    def parent(self):
-        return self._parent
+        self.val = val
+        self.left: Optional[TreeNode] = left
+        self.right: Optional[TreeNode] = right
+        self.parent: Optional[TreeNode] = None
 
 tree = TreeNode(15, TreeNode(6, TreeNode(3, TreeNode(2), TreeNode(4)), TreeNode(7, None, TreeNode(13, TreeNode(9)))), TreeNode(18, TreeNode(17), TreeNode(20)))
 
@@ -72,11 +57,25 @@ def insert(root: TreeNode, key):
         return root
 
     if root.val < key:
-        root._right = insert(root.right, key)
+        root.right = insert(root.right, key)
     else:
-        root._left = insert(root.left, key)
+        root.left = insert(root.left, key)
 
     return root
+
+def successor(root: TreeNode):
+    if root.right:
+        return tree_minimum(root.right)
+
+    parent = root.parent
+    while parent and root == parent.right:
+        root = parent
+        parent = parent.parent
+
+    return parent
+
+print('successor')
+print(successor(tree).val)
 
 def insert_iterative(root: TreeNode, key):
     new_node = TreeNode(key)
@@ -96,26 +95,27 @@ def insert_iterative(root: TreeNode, key):
             return root
 
     if parent.val > key:
-        parent._left = new_node
+        parent.left = new_node
     else:
-        parent._right = new_node
+        parent.right = new_node
 
     return root
 
 insert(tree, 5)
 insert_iterative(tree, 8)
 
-# replace sub-tree with root of sub_tree_u by sub-tree with root sub_tree_v
-def transplant(tree_node, sub_tree_u, sub_tree_v):
-    if sub_tree_u.parent is None:
-        tree_node.root = sub_tree_v
-    elif sub_tree_u == sub_tree_u.parent.left:
-        sub_tree_u.parent.left = sub_tree_v
+# replace subtree with root of sub_tree_u by subtree with root sub_tree_v
+def transplant(tree_node, node_to_delete, replacement_node):
+    if node_to_delete.parent is None:
+        tree_node.root = replacement_node
+    elif node_to_delete == node_to_delete.parent.left:
+        node_to_delete.parent.left = replacement_node
     else:
-        sub_tree_u.parent.right = sub_tree_v
+        node_to_delete.parent.right = replacement_node
 
-    if not sub_tree_v is None:
-        sub_tree_v.parent = sub_tree_u.parent
+    if not replacement_node is None:
+        replacement_node.parent = node_to_delete.parent
+
 
 def tree_delete(root, node_delete):
     if not node_delete.left:
@@ -123,11 +123,34 @@ def tree_delete(root, node_delete):
     elif not node_delete.right:
         transplant(root, node_delete, node_delete.left)
     else:
-        y = tree_minimum(node_delete.right)
-        if y.parent != node_delete:
-            transplant(root, y, y.right)
-            y.right = node_delete.right
-            y.right.parent = y
-        transplant(root, node_delete, y)
-        y.left =  node_delete.left
-        y.left.parent = y
+        successor_node = tree_minimum(node_delete.right)
+        if successor_node.parent != node_delete:
+            transplant(root, successor_node, successor_node.right)
+            successor_node.right = node_delete.right
+            successor_node.right.parent = successor_node
+        transplant(root, node_delete, successor_node)
+        successor_node.left =  node_delete.left
+        successor_node.left.parent = successor_node
+
+tree = TreeNode(12, TreeNode(5, TreeNode(2), TreeNode(9)), TreeNode(18, TreeNode(15, None, TreeNode(17)), TreeNode(19)))
+
+def print_tree(tree_node: TreeNode, indent: str, last: bool):
+    if tree_node:
+        sys.stdout.write(indent)
+        if last:
+            sys.stdout.write("R----")
+            indent += "     "
+        else:
+            sys.stdout.write("L----")
+            indent += "|    "
+        print(tree_node.val)
+        print_tree(tree_node.left, indent, False)
+        print_tree(tree_node.right, indent, True)
+
+
+delete_node = tree.right.left   # 15
+print(delete_node.val)
+
+print('Binary tree')
+print_tree(tree, " ", True)
+tree_delete(tree, delete_node)
