@@ -1,4 +1,4 @@
-# https://leetcode.com/explore/featured/card/leetcodes-interview-crash-course-data-structures-and-algorithms/704/linked-lists/4597/
+# https://leetcode.com/problems/remove-duplicates-from-sorted-list/editorial/
 from typing import Optional
 
 

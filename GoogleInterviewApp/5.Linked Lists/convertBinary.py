@@ -1,4 +1,6 @@
-# Given head which is a reference node to a singly-linked list. 
+# https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/description
+
+# Given head which is a reference node to a singly-linked list.
 # The value of each node in the linked list is either 0 or 1. 
 # The linked list holds the binary representation of a number.
 
@@ -13,6 +15,7 @@ class ListNode:
 
 def getDecimalValue(head: ListNode) -> int:
 
+    sum = 0
     while head:
         sum += head.val * pow(2, pow_val)
         pow_val += 1

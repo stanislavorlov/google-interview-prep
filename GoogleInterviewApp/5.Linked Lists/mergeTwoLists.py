@@ -1,4 +1,6 @@
-# Merge the two lists into one sorted list. 
+# https://leetcode.com/problems/merge-two-sorted-lists/description/
+
+# Merge the two lists into one sorted list.
 # The list should be made by splicing together the nodes of the first two lists.
 
 # Input: list1 = [1,2,4], list2 = [1,3,4]

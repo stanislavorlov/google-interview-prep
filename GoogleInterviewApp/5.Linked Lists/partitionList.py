@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/partition-list/description/
 # https://ua.udemy.com/course/data-structures-algorithms-python/learn/quiz/5836830#overview
 
 # Implement the partition_list member function for the LinkedList class, 
@@ -45,7 +46,7 @@ class LinkedList:
         self.tail = None
         self.length = 0
 
-    def partition_list(self, x):
+    def partition(self, x):
         beforeHead = Node(0)
         afterHead = Node(0)
         beforePointer = beforeHead
@@ -75,7 +76,7 @@ list.append(4)
 list.append(2)
 list.append(5)
 
-result = list.partition_list(3)
+result = list.partition(3)
 
 cur = result
 while cur:

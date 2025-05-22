@@ -1,6 +1,11 @@
+# https://leetcode.com/problems/linked-list-cycle/description/
+
 from typing import Optional
 
-from DataStructures.LinkedList.LeetcodeList import ListNode
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:

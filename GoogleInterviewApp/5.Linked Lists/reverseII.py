@@ -1,4 +1,4 @@
-# https://leetcode.com/explore/featured/card/leetcodes-interview-crash-course-data-structures-and-algorithms/704/linked-lists/4598/
+# https://leetcode.com/problems/reverse-linked-list-ii/
 from typing import Optional
 
 
