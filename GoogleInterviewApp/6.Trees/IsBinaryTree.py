@@ -1,4 +1,4 @@
-# https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=trees
+# https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/problem
 
 # The data value of every node in a node's left subtree is less than the data value of that node.
 # The data value of every node in a node's right subtree is greater than the data value of that node.
