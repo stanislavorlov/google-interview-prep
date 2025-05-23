@@ -1,4 +1,4 @@
-# https://leetcode.com/explore/featured/card/leetcodes-interview-crash-course-data-structures-and-algorithms/706/stacks-and-queues/4611/
+# https://leetcode.com/problems/make-the-string-great/description/
 
 # To make the string good, you can choose two adjacent characters that make the string bad and remove them.
 # You can keep doing this until the string becomes good.
