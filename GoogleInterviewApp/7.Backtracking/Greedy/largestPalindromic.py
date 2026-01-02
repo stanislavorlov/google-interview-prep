@@ -31,7 +31,7 @@ class Solution:
         return output
 
     # works
-    def largestPalindromic(self, num: str) -> str:
+    def largestPalindromic1(self, num: str) -> str:
         counter = defaultdict(int)
         for c in num:
             counter[int(c)] += 1
@@ -51,6 +51,24 @@ class Solution:
             return front + mid + front[::-1]
         else:
             return "0"
+
+    def largestPalindromic(self, num: str) -> str:
+        front, mid = "", ""
+        counter = Counter(num)
+
+        max_dig = max(counter)
+        for digit in '9876543210':
+            quotient, remainder = divmod(counter[digit], 2)
+            if remainder and not len(mid):
+                mid += digit
+            front += quotient * digit
+
+        front = front.lstrip('0')
+
+        if int(max_dig) == 0:
+            return "0"
+
+        return front + mid + front[::-1]
 
 solution = Solution()
 print(solution.largestPalindromic('444947137'))
