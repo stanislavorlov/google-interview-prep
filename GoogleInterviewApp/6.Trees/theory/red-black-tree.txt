@@ -1,0 +1,9 @@
+Root is always black
+All null nodes are considered black
+A red node doesn't have a red child
+Every path to any leaf node goes through the same number of black nodes
+If there is a one child, it must be red
+
+In case of violation:
+- black aunt => rotate
+- red aunt => color flip
