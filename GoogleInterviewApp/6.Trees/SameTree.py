@@ -13,13 +13,15 @@ class TreeNode:
 
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-        if p == None and q == None:
+        if not p and not q:
             return True
-        
-        if p == None or q == None or p.val != q.val:
+
+        if not p or not q:
             return False
-        
-        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+
+        return p.val == q.val and \
+            self.isSameTree(p.left, q.left) and \
+            self.isSameTree(p.right, q.right)
     
     # iteration
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
