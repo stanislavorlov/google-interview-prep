@@ -3,6 +3,7 @@
 # https://leetcode.com/problems/minimum-depth-of-binary-tree/description/
 
 import sys
+from collections import deque
 from typing import Optional
 
 class TreeNode:
@@ -31,6 +32,24 @@ class Solution:
         dfs(root)
 
         return min_depth
+
+    def minDepthQueue(self, root: Optional[TreeNode]) -> int:
+        if not root:
+            return 0
+        queue = deque([root])
+        depth = 1
+        while queue:
+            qSize = len(queue)
+            for _ in range(qSize):
+                node = queue.popleft()
+                if node:
+                    continue
+                if not node.left and not node.right:
+                    return depth
+                queue.append(node.left)
+                queue.append(node.right)
+            depth += 1
+        return -1
 
 sol = Solution()
 tree = TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))
