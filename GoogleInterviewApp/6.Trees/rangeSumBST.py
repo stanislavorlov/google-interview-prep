@@ -28,3 +28,19 @@ class Solution:
                 stack.append(node.right)
 
         return sum
+
+    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+        if not root:
+            return 0
+
+        ans = 0
+        if low <= root.val <= high:
+            ans += root.val
+
+        if root.left.val > low:
+            ans += self.rangeSumBST(root.left, low, high)
+
+        if root.right.val < high:
+            ans += self.rangeSumBST(root.right, low, high)
+
+        return ans
