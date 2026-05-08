@@ -12,21 +12,19 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+    def rangeSumBSTStack(self, root: Optional[TreeNode], low: int, high: int) -> int:
         stack = [root]
         sum = 0
 
-        while len(stack):
+        while stack:
             node = stack.pop()
+            if low <= node.val <= high:
+                sum += node.val
 
-            if node:
-                if low <= node.val <= high:
-                    sum += node.val
+            if node.left and node.left.val > low:
+                stack.append(node.left)
 
-                if node.val >= low:
-                    stack.append(node.left)
-
-                if node.val <= high:
-                    stack.append(node.right)
+            if node.right and node.right.val < high:
+                stack.append(node.right)
 
         return sum
