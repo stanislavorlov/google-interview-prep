@@ -114,7 +114,43 @@ class Solution:
 
         return uf.count
 
+class SolutionNeetcode:
+    def countComponents(self, n: int, edges: List[List[int]]) -> int:
+        par = [i for i in range(n)]
+        rank = [1] * n
+
+        def find(x):
+            res = x
+
+            if par[res] != res:
+                par[res] = par[par[res]]
+                res = par[res]
+            return res
+
+        def union(x, y):
+            p1, p2 = find(x), find(y)
+
+            if p1 == p2:
+                return 0
+
+            if rank[p2] > rank[p1]:
+                par[p1] = p2
+                rank[p2] += rank[p1]
+            else:
+                par[p2] = p1
+                rank[p1] += rank[p2]
+
+            return 1
+
+        res = n
+        for a, b in edges:
+            res -= union(a, b)
+        return res
+
 solution = Solution()
 print(solution.countComponentsDSU(5, [[0,1],[1,2],[3,4]]))      # 2
 
 print(solution.countComponentsBfs(5, [[0,1],[1,2],[2,3],[3,4]]))   # 1
+
+solutionN = SolutionNeetcode()
+print(solutionN.countComponents(5, [[0,1],[1,2],[3,4]]))
