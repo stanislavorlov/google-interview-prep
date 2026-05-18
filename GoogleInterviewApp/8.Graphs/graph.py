@@ -3,65 +3,69 @@
 # V = {0,1,2,3}
 # E = { (0,1), (0,2), (1,3), (2,3) }
 
-from collections import namedtuple
+from collections import defaultdict, deque
+from typing import List
 
-Graph = namedtuple("Graph", ["nodes", "edges"])
+# First format - array of edges
+def build_graph(edges: List[List[int]]) -> List[List[int]]:
+    graph = defaultdict(list)
+    for x,y in edges:
+        graph[x].append(y)
 
-def createGraphFromNodexEdges():
-    nodes = ["A", "B", "C", "D"]
-    edges = [
-        ("A", "B"),
-        ("A", "B"),
-        ("A", "C"),
-        ("A", "C"),
-        ("A", "D"),
-        ("B", "D"),
-        ("C", "D"),
-    ]
+    return graph
 
-    return Graph(nodes, edges)
+input_edges = [[0, 1], [1, 2], [2, 0], [2, 3]]
 
-def adjacency_dict(graph):
-    adj = {node: [] for node in graph.nodes}
-    for edge in graph.edges:
-        node1, node2 = edge[0], edge[1]
-        adj[node1].append(node2)
-        adj[node2].append(node1)
+# Second format - adjacency list
+graph = build_graph(input_edges)      # the list of outgoing edges from the i-th node
 
-    return adj
+# Third format - adjacency matrix
+# 2D matrix graph, if graph[i][j] == 1 that means there is an edge from i to j
 
-def adjacency_matrix(graph):
-    adj = [[0 for node in graph.nodes] for node in graph.nodes]
-    for edge in graph.edges:
-        node1,node2 = edge[0],edge[1]
-        adj[node1][node2] += 1
-        adj[node2][node1] += 1
+# Last format - matrix
+# Each element in matrix represents a node and its neighbors are adjacent nodes
 
-    return adj
+# We might need to convert the input into Hash map first
 
-G1 = createGraphFromNodexEdges()
-print(G1)
+def dfs_recursive(g, node, visited=None):
+    if visited is None:
+        visited = set()
 
-G2 = adjacency_dict(G1)
-print(G2)
+    if node not in visited:
+        print(node)
+        visited.add(node)
+        for neighbor in g[node]:
+            dfs_recursive(g, neighbor, visited)
 
-nodes = range(4)
-edges = [
-    (0,1),
-    (0,1),
-    (0,2),
-    (0,2),
-    (0,3),
-    (1,3),
-    (2,3),
-]
-G3 = Graph(nodes, edges)
-print(adjacency_matrix(G3))
+def dfs_iterative(g, node):
+    visited = set()
 
-graph_elements = { 
-   "a" : ["b","c"],
-   "b" : ["a", "d"],
-   "c" : ["a", "d"],
-   "d" : ["e"],
-   "e" : ["d"]
-}
+    stack = [node]
+    while stack:
+        node = stack.pop()
+        if node not in visited:
+            print(node)
+            visited.add(node)
+            stack.extend(reversed(g[node]))
+
+def bfs(g, start):
+    visited = {start}
+    queue = deque([start])
+    while queue:
+        node = queue.popleft()
+        print(node)
+        for neighbor in g[node]:
+            if neighbor not in visited:
+                visited.add(neighbor)
+                queue.append(neighbor)
+
+# [[0, 1], [1, 2], [2, 0], [2, 3]]
+print("BFS iterative")
+bfs(graph, 0)
+print("DFS recursive")
+dfs_recursive(graph, 0)
+print("DFS iterative")
+dfs_iterative(graph, 0)
+
+# DFS - stack, pop, extend reversed neighbors
+# BFS - queue, popleft, append neighbors
