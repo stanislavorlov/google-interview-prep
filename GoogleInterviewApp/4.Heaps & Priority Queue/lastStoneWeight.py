@@ -12,16 +12,17 @@ from typing import List
 # Return the weight of the last remaining stone, or 0 if there are no stones left.
 
 def last_stone_weight(stones: List[int]) -> int:
-    stones = [-stone for stone in stones]
-    heapq.heapify(stones)
+    heap = [-s for s in stones]
+    heapq.heapify(heap)
 
-    while len(stones) > 1:
-        first = abs(heapq.heappop(stones))      # log(n) is much faster than linear time
-        second = abs(heapq.heappop(stones))     # log(n) is much faster than linear time
-        if first != second:
-            heapq.heappush(stones, -abs(first-second))
+    while len(heap) > 1:
+        y = -heapq.heappop(heap)
+        x = -heapq.heappop(heap)
+        if x != y:
+            heapq.heappush(heap, -(y - x))
 
-    return -stones[0] if stones else 0
+    return -heap[0] if heap else 0
+
 
 stones_arr = [2,7,4,1,8,1]
 print(last_stone_weight(stones_arr))
