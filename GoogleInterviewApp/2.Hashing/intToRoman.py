@@ -51,7 +51,7 @@ class TestMethods(unittest.TestCase):
 
     def test_first(self):
         solution = Solution()
-        ans = solution.intToRoman(3749)
+        ans = solution.intToRoman2(3749)
 
         self.assertEqual("MMMDCCXLIX", ans)
 

@@ -29,26 +29,29 @@ class Solution:
     
     def threeSum2(self, nums: list[int]) -> list[list[int]]:
         nums.sort()
-        l = len(nums)
-        res = []
+        answer = []
 
-        for i in range(0, l):
-            low, high = i + 1, l-1
-            while low < high:
-                sum = nums[i] + nums[low] + nums[high]
+        for i, val in enumerate(nums):
+            if i > 0 and val == nums[i - 1]:
+                continue
 
-                if sum == 0:
-                    res.append((nums[i], nums[low], nums[high]))
-                    low += 1
-                    high -= 1
-                elif sum < 0:
-                    low += 1
+            left, right = i + 1, len(nums) - 1
+
+            while left < right:
+                amount = val + nums[left] + nums[right]
+                if amount < 0:
+                    left += 1
+                elif amount > 0:
+                    right -= 1
                 else:
-                    high -= 1
-            
-        return res
-    
-    def threeSum3(self, nums: list[int]) -> list[list[int]]:
+                    answer.append([nums[i], nums[left], nums[right]])
+                    left += 1
+                    while nums[left - 1] == nums[left] and left < right:
+                        left += 1
+
+        return answer
+
+def threeSum3(self, nums: list[int]) -> list[list[int]]:
         res, dups = set(), set()
         seen = {}
         for i, val1 in enumerate(nums):

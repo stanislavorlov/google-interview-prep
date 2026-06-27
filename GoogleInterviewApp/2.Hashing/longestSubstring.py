@@ -28,6 +28,35 @@ def lengthOfLongestSubstring(input: str) -> int:
             
     return max_length
 
+def lengthOfLongestSubstring2(s: str) -> int:
+    left = 0
+    ans = 0
+    chars = set()
+    for right in range(len(s)):
+        if not s[right] in chars:
+            chars.add(s[right])
+            ans = max(ans, right - left + 1)
+        else:
+            while s[right] in chars:
+                chars.remove(s[left])
+                left += 1
+            chars.add(s[right])
+
+    return ans
+
+def lengthOfLongestSubstring3(s: str) -> int:
+    left = 0
+    ans = 0
+    seen = set()
+    for right in range(len(s)):
+        ch = s[right]
+        while ch in seen:
+            seen.remove(s[left])
+            left += 1
+        ans = max(ans, right - left + 1)
+        seen.add(ch)
+    return ans
+
 print(lengthOfLongestSubstring("abcabcbb"))
 print(lengthOfLongestSubstring("bbbbb"))
 print(lengthOfLongestSubstring("pwwkew"))
